@@ -12,20 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const counts = JSON.parse(localStorage.getItem('counts')) || {};
         const itemCounts = counts[id] || { likes: 0, dislikes: 0 };
 
-        likesCountElem.textContent = `Likes: ${itemCounts.likes}`;
-        dislikesCountElem.textContent = `Dislikes: ${itemCounts.dislikes}`;
+        likesCountElem.textContent = `${itemCounts.likes}`;
+        dislikesCountElem.textContent = `${itemCounts.dislikes}`;
 
         likeBtn.addEventListener('click', () => {
             
             itemCounts.likes += 1;
             updateCounts(id, itemCounts);
-            likesCountElem.textContent = `Likes: ${itemCounts.likes}`;
+            likesCountElem.textContent = `${itemCounts.likes}`;
         });
 
         dislikeBtn.addEventListener('click', () => {
             itemCounts.dislikes += 1;
             updateCounts(id, itemCounts);
-            dislikesCountElem.textContent = `Dislikes: ${itemCounts.dislikes}`;
+            dislikesCountElem.textContent = `${itemCounts.dislikes}`;
         });
     });
 
