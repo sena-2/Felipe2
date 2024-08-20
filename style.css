@@ -12,6 +12,12 @@ html {
     scroll-behavior: smooth;
 }
 
+#servicios {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
 header {
     display: none;
     position: relative;
@@ -943,6 +949,11 @@ a {
    flex-direction: column;
 
     }
+
+    .subtitulo {
+        text-align: center;
+        padding: 20px;
+    }
 }
 
 /* Estilos para pantallas medianas */
@@ -959,6 +970,7 @@ a {
 
     }
 
+   
     #mostrar {
         color: #fff;
         z-index: 100;
@@ -1081,5 +1093,10 @@ a {
 
     .footer-basic .social {
         margin-bottom: 10px;
+    }
+
+    .subtitulo {
+        text-align: center;
+        padding: 20px;
     }
 }
